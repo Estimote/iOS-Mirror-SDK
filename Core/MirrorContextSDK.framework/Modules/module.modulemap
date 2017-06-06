@@ -1,0 +1,6 @@
+framework module MirrorContextSDK {
+  umbrella header "MirrorContextSDK.h"
+
+  export *
+  module * { export * }
+}
