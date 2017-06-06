@@ -24,13 +24,13 @@ Want to integrate it with your own app?
 
 2. Open your project, e.g., "MyProject/MyProject.xcodeproj". Drag the "MirrorDisplay.xcodeproj" and "MirrorContextSDK.framework" from the "MirrorSDK" folder into the Project Navigator. Verify that the checkbox next to your app's target is selected.
 
-  (You check out one of the Examples' "Dependencies" group to see what it should look like.)
+   (You can check out one of the Examples' "Dependencies" group to see what it should look like.)
 
 3. Go to your project's settings, the "General" tab.
 
 4. Add "MirrorDisplay.framework" and "MirrorContextSDK.framework" into the "Embedded Binaries" section.
 
-  (Again, when in doubt, you can compare your General tab to that from one of the Examples.)
+   (Again, when in doubt, you can compare your General tab to that from one of the Examples.)
 
 _For easier installation, we'll be adding CocoaPods and Carthage support in the future._
 
@@ -55,10 +55,8 @@ class ViewController: UIViewController {
 
       p.style = PosterStyle() { ps in
         ps.textAlign = .center
-        ps.textPosition = Position(
-          horizontal: .center, vertical: .bottom(offset: 80))
-        ps.imagePosition = Position(
-          horizontal: .center, vertical: .top(offset: 80))
+        ps.textPosition = Position(horizontal: .center, vertical: .bottom(offset: 80))
+        ps.imagePosition = Position(horizontal: .center, vertical: .top(offset: 80))
       }
     }
 
@@ -82,9 +80,9 @@ We'll be expanding the capabilities of this special template, so let us know wha
 
 ## Known issues or things worth knowing
 
-- `MirrorContextSDK` will soon be renamed to `MirrorCore`
-  - `MirrorCore` is our framework for discovering, connecting to, and sending data to Mirror devices
-  - `MirrorDisplay` is a layer on top of that, to provide a convenient way of showing things on Mirror
+- "MirrorContextSDK" will soon be renamed to "MirrorCore"
+  - MirrorCore is our framework for discovery, authentication, connection, and sending data to Mirrors
+  - MirrorDisplay is a layer on top of that, to provide a convenient way of showing things on Mirror
 
 - `MirrorClient` currently tries to connect to any and all Mirror devices it finds
   - If you want to restrict that: for now, a workaround is to tweak the filter in the `startDeviceDiscovery` call, inside the `ConnectivityService`'s `init`
@@ -99,4 +97,4 @@ _Coming soon!_ For now, you can browse the source code of the MirrorDisplay fram
 
 ## "Work in progress" disclaimer
 
-The APIs are not yet considered stable and will likely change … for better, and more powerful 😇 We'll be providing detailed changelogs and migration advice as we go.
+The APIs are not yet considered stable and will likely change … for better, and more powerful, naturally 😇 We'll be providing detailed changelogs and migration advice as we go.
