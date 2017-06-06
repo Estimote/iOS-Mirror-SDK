@@ -7,7 +7,7 @@
 [![Feature requests](https://img.shields.io/badge/feature%20request-canny.io-blue.svg)](https://estimote.canny.io/mirror-display)
 [![MIT license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
 [![Build status](https://www.bitrise.io/app/c4fe0dd6bb4bca8f/status.svg?token=dty-BSZ34Wt5rRnmzgK43g&branch=master)]()
-[![Chat on Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/Estimote-Mirror-Display/Lobby)
+[![Chat on Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/EstimoteMirror/Mirror-SDK-iOS)
 
 **Got a question?** Join us on [Gitter][], or head over to our [community forums][].
 
