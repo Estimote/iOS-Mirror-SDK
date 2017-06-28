@@ -11,16 +11,15 @@
 
 **Got a question?** Join us on [Gitter][], or head over to our [community forums][].
 
-[Gitter]: https://gitter.im/Estimote-Mirror-Display/Lobby
+[Gitter]: https://gitter.im/EstimoteMirror
 [community forums]: https://forums.estimote.com
 
 **Table of Contents:**
 
 * [Getting started](#getting-started)
-* [Time for a Hello World!](#time-for-a-hello-world)
-* [How does it work?](#how-does-it-work)
+   + [Hello, world!](#hello-world)
+* [Documentation](#documentation)
 * [Known issues or things worth knowing](#known-issues-or-things-worth-knowing)
-* [API reference?](#api-reference)
 * ["Work in progress" disclaimer](#work-in-progress-disclaimer)
 
 ## Getting started
@@ -43,9 +42,7 @@ Want to integrate it with your own app?
 
 _For easier installation, we'll be adding CocoaPods and Carthage support in the future._
 
-## Time for a Hello World!
-
-If you've seen the Examples, you probably know the drill already 🤓
+### Hello, world!
 
 ```swift
 import MirrorDisplay
@@ -74,7 +71,7 @@ class ViewController: UIViewController {
 }
 ```
 
-## How does it work?
+## Documentation
 
 We have extensive documentation available on [Estimote Developer Portal](http://developer.estimote.com).
 
@@ -92,10 +89,6 @@ The best place to get started is with … [Intro to Estimote Mirror](http://deve
 - Proximity zone thresholds are currently kind of hard-coded in the `Proximity.swift` file
   - For now, you can simply tweak them in there
   - To help with this, there's debug messages with observed RSSI logged in the Xcode console
-
-## API reference?
-
-_Coming soon!_ For now, you can browse the source code of the MirrorDisplay framework, and the header files of the MirrorContextSDK framework. And naturally, syntax completion is your friend too!
 
 ## "Work in progress" disclaimer
 
