@@ -14,21 +14,30 @@
 [Gitter]: https://gitter.im/Estimote-Mirror-Display/Lobby
 [community forums]: https://forums.estimote.com
 
-## Get started
+**Table of Contents:**
+
+* [Getting started](#getting-started)
+* [Time for a Hello World!](#time-for-a-hello-world)
+* [How does it work?](#how-does-it-work)
+* [Known issues or things worth knowing](#known-issues-or-things-worth-knowing)
+* [API reference?](#api-reference)
+* ["Work in progress" disclaimer](#work-in-progress-disclaimer)
+
+## Getting started
 
 Clone or download this repo, open MirrorDisplay.xcodeproj, and run the bundled Examples.
 
 Want to integrate it with your own app?
 
-1. Copy this repo into a subdirectory of your project, e.g., "MyProject/MirrorSDK".
+1. Copy this repo into a subdirectory of your project, e.g., `MyProject/MirrorSDK`.
 
-2. Open your project, e.g., "MyProject/MyProject.xcodeproj". Drag the "MirrorDisplay.xcodeproj" and "MirrorContextSDK.framework" from the "MirrorSDK" folder into the Project Navigator. Verify that the checkbox next to your app's target is selected.
+2. Open your project, e.g., `MyProject/MyProject.xcodeproj`. Drag the **MirrorDisplay.xcodeproj** and **MirrorContextSDK.framework** from the `MirrorSDK` folder into the Project Navigator. Verify that the checkbox next to your app's target is selected.
 
    (You can check out one of the Examples' "Dependencies" group to see what it should look like.)
 
-3. Go to your project's settings, the "General" tab.
+3. Go to your project's settings, the *General* tab.
 
-4. Add "MirrorDisplay.framework" and "MirrorContextSDK.framework" into the "Embedded Binaries" section.
+4. Add **MirrorDisplay.framework** and **MirrorContextSDK.framework** into the *Embedded Binaries* section.
 
    (Again, when in doubt, you can compare your General tab to that from one of the Examples.)
 
@@ -67,16 +76,9 @@ class ViewController: UIViewController {
 
 ## How does it work?
 
-There are HTML5 web apps loaded on Mirror. We call them "templates", as they're meant to be filled in with context/content from the mobile app.
+We have extensive documentation available on [Estimote Developer Portal](http://developer.estimote.com).
 
-For example, you could build a "flight info" template—that is, an HTML5 website with some JavaScript that takes flight data sent to it from your mobile app, puts it in the appropriate places, and shows it on the screen. _We'll have more documentation on how to build your own templates soon._
-
-We've also built a "special" template that provides some ready-made views you can use right away, without having to build your own HTML5 template first. Currently, these are:
-
-- `Poster`, i.e., some call-out text ("header" and "body") and an image
-- `Table`, i.e., a … table 🙃 _Coming to the iOS SDK soon!_
-
-We'll be expanding the capabilities of this special template, so let us know what views and customization options you'd like to see!
+The best place to get started is with … [Intro to Estimote Mirror](http://developer.estimote.com/mirror/)!
 
 ## Known issues or things worth knowing
 
