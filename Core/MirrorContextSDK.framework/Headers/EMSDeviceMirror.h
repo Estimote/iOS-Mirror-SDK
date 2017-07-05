@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger, EMSDeviceMirrorError) {
 @interface EMSDeviceMirror : EMSDeviceConnectable
 
 /**
- *  Flag indicates encryption is enabled.
+ *  Flag indicating if encryption is enabled.
  */
 @property (nonatomic, strong, readonly) NSNumber *displayAccessControlEnabled;
 
