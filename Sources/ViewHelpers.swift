@@ -99,7 +99,7 @@ public final class Image: NSObject {
 
     @objc(preloadedImageWithPath:)
     public static func preloaded(path: String) -> Image {
-        return Image(serialized: "assets/\(path)")
+        return Image(serialized: "/shared/\(path)")
     }
 
     let serialized: String
