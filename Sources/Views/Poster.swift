@@ -92,13 +92,13 @@ public class PosterStyle: NSObject {
     var dataDict: [String: Any] {
         get {
             return [
-                "imagePosition": imagePosition as Any,
-                "textPosition": textPosition as Any,
+                "imagePosition": imagePosition?.serialized as Any,
+                "textPosition": textPosition?.serialized as Any,
                 "fontSize": fontSize?.serialized as Any,
                 "fontColor": fontColor?.serialized as Any,
                 "textAlign": textAlign?.serialized as Any,
                 "backgroundColor": backgroundColor?.serialized as Any,
-                "backgroundImage": backgroundImage as Any,
+                "backgroundImage": backgroundImage?.serialized as Any,
 
                 "header": [
                     "fontSize": headerFontSize?.serialized as Any,
