@@ -77,7 +77,7 @@ public class MirrorClient: NSObject, ConnectivityObserver {
         }
         if !actions.isEmpty {
             connectivityService.send([
-                "template": "__built-in_views",
+                "template": "estimote/__built-in_views",
                 "actions": actions
                 ], to: mirrorIdentifier)
         }
