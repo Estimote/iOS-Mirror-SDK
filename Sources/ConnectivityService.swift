@@ -34,7 +34,7 @@ class ConnectivityService: NSObject, EMSDeviceManagerDelegate, EMSDeviceConnecta
         if let mirror = connectedMirrors.first(where: { $0.identifier == mirrorIdentifier }) {
             NSLog("[ConnectivityService] attempting to send data = \(data) to Mirror with identifier = \(mirrorIdentifier)")
 
-            mirror.display(data) { (_, error) in
+            mirror.display(data) { error in
                 if let error = error {
                     NSLog("[ConnectivityService] failed to send data = \(data) to Mirror with identifier = \(mirrorIdentifier), error = \(error)")
                 } else {
