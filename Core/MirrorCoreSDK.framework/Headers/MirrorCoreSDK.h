@@ -11,13 +11,13 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for MirrorContextSDK.
-FOUNDATION_EXPORT double MirrorContextSDKVersionNumber;
+//! Project version number for MirrorCoreSDK.
+FOUNDATION_EXPORT double MirrorCoreSDKVersionNumber;
 
-//! Project version string for MirrorContextSDK.
-FOUNDATION_EXPORT const unsigned char MirrorContextSDKVersionString[];
+//! Project version string for MirrorCoreSDK.
+FOUNDATION_EXPORT const unsigned char MirrorCoreSDKVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <MirrorContextSDK/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <MirrorCoreSDK/PublicHeader.h>
 
 /**
  *  Estimote Mirror SDK

@@ -35,13 +35,25 @@ typedef NS_ENUM(NSInteger, EMSDeviceMirrorError) {
     /**
      *  Synchronizing settings from Cloud failed.
      */
-    EMSDeviceMirrorErrorSynchronizationFailed
+    EMSDeviceMirrorErrorSynchronizationFailed,
+    /**
+     *  No such template on Mirror.
+     */
+    EMSDeviceMirrorErrorTemplateMissing,
+    /**
+     *  Specified template is not active.
+     */
+    EMSDeviceMirrorErrorTemplateNotActive,
+    /**
+     *  Mirror has template lock.
+     */
+    EMSDeviceMirrorErrorTemplateLocked
 };
 
 @interface EMSDeviceMirror : EMSDeviceConnectable
 
 /**
- *  Flag indicating if encryption is enabled.
+ *  Flag indicates encryption is enabled.
  */
 @property (nonatomic, strong, readonly) NSNumber *displayAccessControlEnabled;
 
@@ -65,9 +77,9 @@ typedef NS_ENUM(NSInteger, EMSDeviceMirrorError) {
  *  This method is responsbile for passing encrypted message to the Mirror device.
  *
  *  @param  message Data that will be sent to the Mirror device.
- *  @param  completion  Completion block invoked after sending data to the device. Data in completion block is encrypted MessagePack response from Mirror device. Nil error value means success.
+ *  @param  completion  Completion block invoked after sending message to the device. Nil error value means success.
  */
-- (void)display:(NSDictionary *)message completion:(EMSDataCompletionBlock)completion;
+- (void)display:(NSDictionary *)message completion:(EMSCompletionBlock)completion;
 
 /**
  *  Method responsible for fetching and applying Cloud settings to Mirror device.
