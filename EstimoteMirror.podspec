@@ -22,11 +22,10 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/Estimote/iOS-Mirror-SDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE.txt' }
-  s.author           = { 'Piotr Krawiec' => 'piotr@krawiec.me' }
+  s.author           = { 'Estimote' => 'contact@estimote.com' }
   s.source           = { :git => 'https://github.com/Estimote/iOS-Mirror-SDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/estimote'
 
   s.ios.deployment_target = '8.0'
 
