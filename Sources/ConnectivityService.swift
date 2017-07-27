@@ -1,4 +1,4 @@
-import MirrorContextSDK
+import MirrorCoreSDK
 
 protocol ConnectivityObserver: class {
 
