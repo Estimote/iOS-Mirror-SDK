@@ -4,6 +4,7 @@
 
 [Estimote Mirror]: http://blog.estimote.com/post/150398268230/launching-estimote-mirror-the-worlds-first
 
+[![CocoaPod Version](https://cocoapod-badges.herokuapp.com/v/EstimoteMirror/badge.png)](http://cocoapods.org/pods/estimotemirror)
 [![Feature requests](https://img.shields.io/badge/feature%20request-canny.io-blue.svg)](https://estimote.canny.io/mirror-display)
 [![Apache License 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0))
 [![Build status](https://www.bitrise.io/app/c4fe0dd6bb4bca8f/status.svg?token=dty-BSZ34Wt5rRnmzgK43g&branch=master)]()
@@ -19,6 +20,7 @@
 * [Getting started](#getting-started)
    + [Hello, world!](#hello-world)
 * [Documentation](#documentation)
+* [Installing via CocoaPods](#pod)
 * [Known issues or things worth knowing](#known-issues-or-things-worth-knowing)
 * ["Work in progress" disclaimer](#work-in-progress-disclaimer)
 
@@ -39,8 +41,6 @@ Want to integrate it with your own app?
 4. Add **MirrorDisplay.framework** and **MirrorContextSDK.framework** into the *Embedded Binaries* section.
 
    (Again, when in doubt, you can compare your General tab to that from one of the Examples.)
-
-_For easier installation, we'll be adding CocoaPods and Carthage support in the future._
 
 ### Hello, world!
 
@@ -76,6 +76,15 @@ class ViewController: UIViewController {
 We have extensive documentation available on [Estimote Developer Portal](http://developer.estimote.com).
 
 The best place to get started is with … [Intro to Estimote Mirror](http://developer.estimote.com/mirror/)!
+
+## Pod
+
+Install via [CocoaPods](https://cocoapods.org/):
+- `$ pod init` in the project root directory
+- Edit your Podfile to include `pod 'EstimoteMirror', ~> '0.1.2'` under your project target
+- `$ pod install`
+
+If you need Carthage support, let us know by submitting a feature request or just chat with us over Gitter! (see the badges above)
 
 ## Known issues or things worth knowing
 
