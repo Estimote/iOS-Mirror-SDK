@@ -81,7 +81,7 @@ The best place to get started is with … [Intro to Estimote Mirror](http://deve
 
 Install via [CocoaPods](https://cocoapods.org/):
 - `$ pod init` in the project root directory
-- Edit your Podfile to include `pod 'EstimoteMirror', ~> '0.1.2'` under your project target
+- Edit your Podfile to include `pod 'EstimoteMirror', '~> 0.1.2'` under your project target
 - `$ pod install`
 
 If you need Carthage support, let us know by submitting a feature request or just chat with us over Gitter! (see the badges above)
