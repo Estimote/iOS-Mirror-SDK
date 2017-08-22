@@ -4,7 +4,7 @@ import MirrorCoreSDK.EMSConfig
 public class MirrorClient: NSObject, ConnectivityObserver {
 
     @objc
-    public override init(appID: String = "", appToken: String = "") {
+    public init(appID: String = "", appToken: String = "") {
         super.init()
       
         EMSConfig.setupAppID(appID, andAppToken: appToken)
