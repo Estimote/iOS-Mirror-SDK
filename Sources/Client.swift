@@ -4,11 +4,19 @@ import MirrorCoreSDK.EMSConfig
 public class MirrorClient: NSObject, ConnectivityObserver {
 
     @objc
-    public init(appID: String = "", appToken: String = "") {
+  public override init() {
         super.init()
-      
-        EMSConfig.setupAppID(appID, andAppToken: appToken)
         connectivityService.registerObserver(self)
+    }
+  
+    @objc
+    public convenience init?(appID: String, appToken: String) {
+        guard appID != "", appToken != "" else {
+            return nil
+        }
+      
+        self.init()
+        EMSConfig.setupAppID(appID, andAppToken: appToken)
     }
 
     @objc
