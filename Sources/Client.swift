@@ -10,11 +10,7 @@ public class MirrorClient: NSObject, ConnectivityObserver {
     }
   
     @objc
-    public convenience init?(appID: String, appToken: String) {
-        guard appID != "", appToken != "" else {
-            return nil
-        }
-      
+    public convenience init(appID: String, appToken: String) {
         self.init()
         EMSConfig.setupAppID(appID, andAppToken: appToken)
     }
