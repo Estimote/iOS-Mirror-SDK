@@ -9,6 +9,16 @@ public class MirrorClient: NSObject, ConnectivityObserver {
         connectivityService.registerObserver(self)
     }
   
+    /**
+       Initialize with an appID and appToken from your Estimote Cloud App for authorization.
+   
+       - parameters:
+         - appID: The Estimote Cloud App ID. Can not be empty.
+         - appToken: The Estimote Cloud App Token. Can not be empty.
+   
+       - returns:
+       A newly created MirrorClient.
+     */
     @objc
     public convenience init(appID: String, appToken: String) {
         self.init()
