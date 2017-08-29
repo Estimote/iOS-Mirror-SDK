@@ -55,23 +55,30 @@ typedef NS_ENUM(NSInteger, EMSDeviceMirrorError) {
 /**
  *  Flag indicates encryption is enabled.
  */
-@property (nonatomic, strong, readonly) NSNumber *displayAccessControlEnabled;
+@property (nonatomic, readonly) BOOL displayAccessControlEnabled;
+
+/**
+ *  One sigma horizontal accuracy in meters.
+ */
+@property (nonatomic, readonly) double accuracy;
 
 /**
  *  Designated initlizer.
  *
- *  @param  identifier  Device's identifier.
- *  @param  peripheralIdentifier    Identifier of Mirror's device peripheral.
- *  @param  rssi    RSSI of scanned peripheral.
- *  @param  discoveryDate   Date of discovery.
+ *  @param  identifier            Device's identifier.
+ *  @param  peripheralIdentifier  Identifier of Mirror's device peripheral.
+ *  @param  rssi                  RSSI of scanned peripheral.
+ *  @param  measuredPower         Measured power of discovered device.
+ *  @param  discoveryDate         Date of discovery.
  *
  *  @return Initilized EMSDeviceMirror object.
  */
 - (instancetype)initWithDeviceIdentifier:(NSString *)identifier
                     peripheralIdentifier:(NSUUID *)peripheralIdentifier
                                     rssi:(NSInteger)rssi
+                           measuredPower:(NSInteger)measuredPower
                            discoveryDate:(NSDate *)discoveryDate
-             displayAccessControlEnabled:(NSNumber *)displayAccessControlEnabled;
+             displayAccessControlEnabled:(BOOL)displayAccessControlEnabled;
 
 /**
  *  This method is responsbile for passing encrypted message to the Mirror device.
