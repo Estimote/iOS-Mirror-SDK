@@ -15,6 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) NSString *identifier;
 @property (nonatomic, strong, readonly) NSUUID *peripheralIdentifier;
 @property (nonatomic, assign, readonly) NSInteger rssi;
+
+/**
+ *  Transmit power of discovered device.
+ */
+@property (nonatomic, readonly) NSInteger measuredPower;
+
 @property (nonatomic, strong, readonly) NSDate *discoveryDate;
 
 /**
@@ -23,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param identifier           device identifier
  *  @param peripheralIdentifier CBPeripheral object's identifier
  *  @param rssi                 CBPeripheral object's RSSI
+ *  @param measuredPower        Measured power of discovered device.
  *  @param discoveryDate        date of discovery
  *
  *  @return Initialized object.
@@ -30,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithDeviceIdentifier:(NSString *)identifier
                     peripheralIdentifier:(NSUUID *)peripheralIdentifier
                                     rssi:(NSInteger)rssi
+                           measuredPower:(NSInteger)measuredPower
                            discoveryDate:(NSDate *)discoveryDate;
 
 @end
