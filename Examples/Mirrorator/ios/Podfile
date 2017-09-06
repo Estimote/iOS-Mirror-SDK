@@ -6,7 +6,7 @@ target 'Mirrorator' do
   # use_frameworks!
 
   # Pods for Mirrorator
-  pod 'EstimoteMirrorCore', '~> 0.1.2'
+  pod 'EstimoteMirrorCore', '~> 0.1.3'
 
   target 'MirroratorTests' do
     inherit! :search_paths
