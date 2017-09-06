@@ -1,0 +1,3 @@
+rootProject.name = 'Mirrorator'
+
+include ':app'

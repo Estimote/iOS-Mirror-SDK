@@ -1,0 +1,1 @@
+../../../../EstimoteMirrorCore/Core/MirrorCoreSDK.framework/Headers/EMSDefinitions.h
