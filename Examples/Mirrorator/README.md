@@ -54,7 +54,7 @@ Sending messages to Mirror requires your authentication.
 
 Add your [`appID` and `appToken`](https://community.estimote.com/hc/en-us/articles/203607313-What-are-App-ID-and-App-Token-and-what-do-I-need-them-for-) to respecive fields [in the `AppDelegate.m`](https://github.com/Estimote/iOS-Mirror-SDK/blob/master/Examples/Mirrorator/ios/Mirrorator/AppDelegate.m#L20) in order to send messages to any Mirror that is in `Deployed and Protected` access mode.
 
-Mirrors that are in the `Developer` access mode require no authentication.
+Mirrors that are in the `Development` access mode require no authentication.
 
 Find and edit your Mirror settings in the Estimote Cloud dashboard!
 
