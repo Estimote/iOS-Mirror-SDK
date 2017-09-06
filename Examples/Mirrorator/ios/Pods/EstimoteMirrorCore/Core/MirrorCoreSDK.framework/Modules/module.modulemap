@@ -1,6 +1,0 @@
-framework module MirrorCoreSDK {
-  umbrella header "MirrorCoreSDK.h"
-
-  export *
-  module * { export * }
-}

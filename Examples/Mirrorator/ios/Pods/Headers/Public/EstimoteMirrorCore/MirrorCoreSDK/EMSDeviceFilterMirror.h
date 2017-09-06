@@ -1,1 +1,0 @@
-../../../../EstimoteMirrorCore/Core/MirrorCoreSDK.framework/Headers/EMSDeviceFilterMirror.h
