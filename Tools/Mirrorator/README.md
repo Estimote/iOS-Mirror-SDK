@@ -5,9 +5,15 @@ Mirrorator is a prototyping tool for developing custom templates on Mirror. Swit
 ### TL;DR
 Send data over Bluetooth to your Mirror templates!
 
+[Download the app to your phone and give it a try.](https://rink.hockeyapp.net/apps/20776ab5ac464eb2bf9ef8edc09f2b96)
+
 ## Example
 
-<img src="Preview.PNG" alt="Preview" style="width: 300px;">
+<p align="center">
+    <img src="Preview.PNG"
+         height="40%"
+         width="40%">
+</p>
 
 Fill the key-value pairs just as in the image above.
 
