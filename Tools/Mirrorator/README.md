@@ -1,6 +1,31 @@
 # iOS Mirrorator 
 
+Mirrorator is a prototyping tool for developing custom templates on Mirror. Switch between templats and populate them with data in a breeze! Develop a custom template for Mirror by following the instructions in [the Estimote Dev Portal](http://developer.estimote.com/mirror/build-your-own-template/). 🤘 
+
+### TL;DR
 Send data over Bluetooth to your Mirror templates!
+
+## Example
+
+<img src="Preview.PNG" alt="Preview" style="width: 300px;">
+
+Fill the key-value pairs just as in the image above.
+
+On tapping `send`, the Estimote `distance` template that is located on Mirror, will be launched with the specified configuration - in this case, the `zone` will be `far`.
+
+Inside the HTML template script we simply listen for user data events.
+
+```js
+if (window.mirror) {
+    mirror.init();
+    mirror.listen(Mirror.Events.USER_DATA, {
+        ondata: function(ev) {
+            // do something with the received data
+        },
+        ondisconnect: function(ev) {}
+    })
+}
+```
 
 ## Build and run 🏃‍
 
@@ -16,37 +41,6 @@ Lastly, from root of the project run:
 > `$ npm install`
 
 Now you can build and run the example project from Xcode on your iDevice!
-
-## Example
-
-Fill the key-value pairs with whatever string data you wish to send to your Mirror.
-
-<img src="Preview.PNG" alt="Preview" style="width: 300px;">
-
-Then, on tapping send, your hypothetical `clock` template that is located on Mirror prints the message in console in the listener closure:
-
-```html
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <script>
-        if (window.mirror) {
-            mirror.init();
-            mirror.listen(Mirror.Events.USER_DATA, {
-                ondata: function(ev) {
-                    console.log(ev) // <- prints the message received
-                },
-                ondisconnect: function(ev) {}
-            })
-        }
-    </script>
-</head>
-<body>
-    <div id="content"></div>
-</body>
-</html>
-```
 
 ## Authentication
 
