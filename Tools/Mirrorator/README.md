@@ -2,11 +2,6 @@
 
 Mirrorator is a prototyping tool for developing custom templates on Mirror. Switch between templats and populate them with data in a breeze! Develop a custom template for Mirror by following the instructions in [the Estimote Dev Portal](http://developer.estimote.com/mirror/build-your-own-template/). 🤘 
 
-### TL;DR
-Send data over Bluetooth to your Mirror templates!
-
-[Download the app to your phone and give it a try.](https://rink.hockeyapp.net/apps/20776ab5ac464eb2bf9ef8edc09f2b96)
-
 ## Example
 
 <p align="center">
