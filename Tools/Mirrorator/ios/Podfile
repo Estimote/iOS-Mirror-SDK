@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Mirrorator' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Mirrorator
+  pod 'EstimoteMirrorCore', '~> 0.1.3'
+
+  target 'MirroratorTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'Mirrorator-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Mirrorator-tvOS
+
+  target 'Mirrorator-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
