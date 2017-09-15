@@ -53,6 +53,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)emsDevice:(EMSDeviceConnectable *)device didUpdateRSSI:(NSNumber *)RSSI withError:(NSError * _Nullable)error;
 
+/**
+ *  Method invoked when connected peripheral receives data.
+ *
+ *  @param  data  Received data from connected device. Data is nil in case of decoding error.
+ */
+- (void)didReceiveData:(NSDictionary * _Nullable)data;
+
 @end
 
 /**
