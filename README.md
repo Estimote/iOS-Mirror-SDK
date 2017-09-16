@@ -7,7 +7,7 @@
 [![CocoaPod Version](https://cocoapod-badges.herokuapp.com/v/EstimoteMirror/badge.png)](http://cocoapods.org/pods/estimotemirror)
 [![Feature requests](https://img.shields.io/badge/feature%20request-canny.io-blue.svg)](https://estimote.canny.io/mirror-display)
 [![Apache License 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0))
-[![Build status](https://www.bitrise.io/app/c4fe0dd6bb4bca8f/status.svg?token=dty-BSZ34Wt5rRnmzgK43g&branch=master)]()
+[![MirrorCore](https://www.bitrise.io/app/13e64565384ed7f0/status.svg?token=UrwNNk7xp6qd2BDglzidDw)](https://www.bitrise.io/app/13e64565384ed7f0)
 [![Chat on Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/EstimoteMirror/Mirror-SDK-iOS)
 
 **Got a question?** Join us on [Gitter][], or head over to our [community forums][].
