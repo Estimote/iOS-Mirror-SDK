@@ -14,7 +14,8 @@
 		AEBC3BD51EAE4AAF006A8AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBC3BD31EAE4AAF006A8AF1 /* LaunchScreen.storyboard */; };
 		AEBC3C431EAE4F57006A8AF1 /* MirrorDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBC3C401EAE4F4F006A8AF1 /* MirrorDisplay.framework */; };
 		AEBC3C441EAE4F57006A8AF1 /* MirrorDisplay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEBC3C401EAE4F4F006A8AF1 /* MirrorDisplay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DDC1A99D1F4C3A4800E86B9E /* MirrorCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC1A99C1F4C3A3300E86B9E /* MirrorCoreSDK.framework */; };
+		DDDEE38E1F97499800B1A1D8 /* MirrorCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC1A99C1F4C3A3300E86B9E /* MirrorCoreSDK.framework */; };
+		DDDEE38F1F97499800B1A1D8 /* MirrorCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDC1A99C1F4C3A3300E86B9E /* MirrorCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AEBC3C441EAE4F57006A8AF1 /* MirrorDisplay.framework in Embed Frameworks */,
+				DDDEE38F1F97499800B1A1D8 /* MirrorCoreSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,8 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDC1A99D1F4C3A4800E86B9E /* MirrorCoreSDK.framework in Frameworks */,
 				AEBC3C431EAE4F57006A8AF1 /* MirrorDisplay.framework in Frameworks */,
+				DDDEE38E1F97499800B1A1D8 /* MirrorCoreSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
