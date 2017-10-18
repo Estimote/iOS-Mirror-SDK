@@ -18,6 +18,10 @@
 		AEBF66181E9A3FA900B02FED /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF66171E9A3FA900B02FED /* Client.swift */; };
 		AEBF661B1E9A44CD00B02FED /* ConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF661A1E9A44CD00B02FED /* ConnectivityService.swift */; };
 		DD2D4D5A1F2A3627003DAC09 /* MirrorCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2D4D591F2A361C003DAC09 /* MirrorCoreSDK.framework */; };
+		DD94495B1F9751B400DD4BBC /* EstimoteMirrorCore.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DD9449571F9751B400DD4BBC /* EstimoteMirrorCore.podspec */; };
+		DD94495C1F9751B400DD4BBC /* EstimoteMirror.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DD94495A1F9751B400DD4BBC /* EstimoteMirror.podspec */; };
+		DD94495F1F9751E200DD4BBC /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD94495D1F9751E100DD4BBC /* LICENSE.txt */; };
+		DD9449601F9751E200DD4BBC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD94495E1F9751E200DD4BBC /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		AEBF66171E9A3FA900B02FED /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		AEBF661A1E9A44CD00B02FED /* ConnectivityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityService.swift; sourceTree = "<group>"; };
 		DD2D4D591F2A361C003DAC09 /* MirrorCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MirrorCoreSDK.framework; path = Core/MirrorCoreSDK.framework; sourceTree = "<group>"; };
+		DD9449571F9751B400DD4BBC /* EstimoteMirrorCore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EstimoteMirrorCore.podspec; sourceTree = "<group>"; };
+		DD94495A1F9751B400DD4BBC /* EstimoteMirror.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EstimoteMirror.podspec; sourceTree = "<group>"; };
+		DD94495D1F9751E100DD4BBC /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		DD94495E1F9751E200DD4BBC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +151,10 @@
 		AEBF65FF1E9A3C4E00B02FED = {
 			isa = PBXGroup;
 			children = (
+				DD94495D1F9751E100DD4BBC /* LICENSE.txt */,
+				DD94495E1F9751E200DD4BBC /* README.md */,
+				DD94495A1F9751B400DD4BBC /* EstimoteMirror.podspec */,
+				DD9449571F9751B400DD4BBC /* EstimoteMirrorCore.podspec */,
 				AEBF660B1E9A3C4E00B02FED /* Sources */,
 				AEBC3B651EACD3D6006A8AF1 /* Tests */,
 				AEBF660A1E9A3C4E00B02FED /* Products */,
@@ -321,6 +333,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD94495F1F9751E200DD4BBC /* LICENSE.txt in Resources */,
+				DD94495B1F9751B400DD4BBC /* EstimoteMirrorCore.podspec in Resources */,
+				DD9449601F9751E200DD4BBC /* README.md in Resources */,
+				DD94495C1F9751B400DD4BBC /* EstimoteMirror.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
