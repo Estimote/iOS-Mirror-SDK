@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) NSInteger rssi;
 
 /**
- *  Transmit power of discovered device.
+ *  Measured power of the beacon (with what RSSI [dBm] device can be heard at exactly 1 m).
  */
 @property (nonatomic, readonly) NSInteger measuredPower;
 
