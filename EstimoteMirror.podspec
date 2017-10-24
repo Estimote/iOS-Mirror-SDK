@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EstimoteMirror'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'Take control of the TV screen from your iOS app with Estimote Mirror SDK'
   s.description      = <<-DESC
 The Mirror SDK is a dev tool designed to reflect our imagination of the future of mobile development in the world of contextual interactions over BLE.
