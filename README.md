@@ -22,7 +22,7 @@
 * [Documentation](#documentation)
 * [Installing via CocoaPods](#pod)
 * [Known issues or things worth knowing](#known-issues-or-things-worth-knowing)
-* ["Work in progress" disclaimer](#work-in-progress-disclaimer)
+* [Feedback and support](#feedback-and-support)
 
 ## Getting started
 
@@ -99,6 +99,7 @@ If you need Carthage support, let us know by submitting a feature request or jus
   - For now, you can simply tweak them in there
   - To help with this, there's debug messages with observed RSSI logged in the Xcode console
 
-## "Work in progress" disclaimer
+## Feedback and support
 
-The APIs are not yet considered stable and will likely change … for better, and more powerful, naturally 😇 We'll be providing detailed changelogs and migration advice as we go.
+We are working hard to deliver better and more powerful Estimote Mirror experiences with every firmware and SDK release. </br>Feel free to share any feedback or ask questions about this project by sending email to contact@estimote.com
+
