@@ -32,13 +32,13 @@ Want to integrate it with your own app?
 
 1. Copy this repo into a subdirectory of your project, e.g., `MyProject/MirrorSDK`.
 
-2. Open your project, e.g., `MyProject/MyProject.xcodeproj`. Drag the **MirrorDisplay.xcodeproj** and **MirrorContextSDK.framework** from the `MirrorSDK` folder into the Project Navigator. Verify that the checkbox next to your app's target is selected.
+2. Open your project, e.g., `MyProject/MyProject.xcodeproj`. Drag the **MirrorDisplay.xcodeproj** and **MirrorCoreSDK.framework** from the `MirrorSDK` folder into the Project Navigator. Verify that the checkbox next to your app's target is selected.
 
    (You can check out one of the Examples' "Dependencies" group to see what it should look like.)
 
 3. Go to your project's settings, the *General* tab.
 
-4. Add **MirrorDisplay.framework** and **MirrorContextSDK.framework** into the *Embedded Binaries* section.
+4. Add **MirrorDisplay.framework** and **MirrorCoreSDK.framework** into the *Embedded Binaries* section.
 
    (Again, when in doubt, you can compare your General tab to that from one of the Examples.)
 
