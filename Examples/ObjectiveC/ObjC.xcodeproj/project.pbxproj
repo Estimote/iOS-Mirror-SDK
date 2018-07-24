@@ -7,41 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AD3828BFB967CB323D70CAE /* libPods-DisplayExamples-ObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B94EEC77F61C5E9A29000F2 /* libPods-DisplayExamples-ObjC.a */; };
+		AC110A5720FE23CA00725139 /* MirrorDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC110A5620FE23CA00725139 /* MirrorDisplay.framework */; };
 		AEBC3C251EAE4EBF006A8AF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBC3C241EAE4EBF006A8AF1 /* main.m */; };
 		AEBC3C281EAE4EBF006A8AF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBC3C271EAE4EBF006A8AF1 /* AppDelegate.m */; };
 		AEBC3C2B1EAE4EBF006A8AF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBC3C2A1EAE4EBF006A8AF1 /* ViewController.m */; };
 		AEBC3C2E1EAE4EBF006A8AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBC3C2C1EAE4EBF006A8AF1 /* Main.storyboard */; };
 		AEBC3C301EAE4EBF006A8AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBC3C2F1EAE4EBF006A8AF1 /* Assets.xcassets */; };
 		AEBC3C331EAE4EBF006A8AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBC3C311EAE4EBF006A8AF1 /* LaunchScreen.storyboard */; };
-		AEBC3C5C1EAE4FD0006A8AF1 /* MirrorDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBC3C541EAE4F7D006A8AF1 /* MirrorDisplay.framework */; };
-		AEBC3C5D1EAE4FD0006A8AF1 /* MirrorDisplay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEBC3C541EAE4F7D006A8AF1 /* MirrorDisplay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DDDEE3911F9749A500B1A1D8 /* MirrorCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC1A9A01F4C3A6500E86B9E /* MirrorCoreSDK.framework */; };
-		DDDEE3921F9749A500B1A1D8 /* MirrorCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDC1A9A01F4C3A6500E86B9E /* MirrorCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AEBC3C531EAE4F7D006A8AF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AEBC3C4E1EAE4F7D006A8AF1 /* MirrorDisplay.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AEBF66091E9A3C4E00B02FED;
-			remoteInfo = MirrorDisplay;
-		};
-		AEBC3C551EAE4F7D006A8AF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AEBC3C4E1EAE4F7D006A8AF1 /* MirrorDisplay.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AEBC3B6C1EACD457006A8AF1;
-			remoteInfo = MirrorDisplayTests;
-		};
-		AEBC3C5E1EAE4FD0006A8AF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AEBC3C4E1EAE4F7D006A8AF1 /* MirrorDisplay.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = AEBF66081E9A3C4E00B02FED;
-			remoteInfo = MirrorDisplay;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AEBC3C5B1EAE4FC7006A8AF1 /* Embed Frameworks */ = {
@@ -50,8 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AEBC3C5D1EAE4FD0006A8AF1 /* MirrorDisplay.framework in Embed Frameworks */,
-				DDDEE3921F9749A500B1A1D8 /* MirrorCoreSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +31,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AEB930C81EE5FFE300252E30 /* MirrorContextSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MirrorContextSDK.framework; path = ../Core/MirrorContextSDK.framework; sourceTree = "<group>"; };
+		2F55E2DED1C621F61AFAFD37 /* Pods-DisplayExamples-ObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisplayExamples-ObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DisplayExamples-ObjC/Pods-DisplayExamples-ObjC.debug.xcconfig"; sourceTree = "<group>"; };
+		5B94EEC77F61C5E9A29000F2 /* libPods-DisplayExamples-ObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DisplayExamples-ObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC110A5620FE23CA00725139 /* MirrorDisplay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MirrorDisplay.framework; sourceTree = "<group>"; };
 		AEBC3C201EAE4EBF006A8AF1 /* DisplayExamples-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DisplayExamples-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBC3C241EAE4EBF006A8AF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AEBC3C261EAE4EBF006A8AF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ObjC/AppDelegate.h; sourceTree = "<group>"; };
@@ -70,8 +44,7 @@
 		AEBC3C2F1EAE4EBF006A8AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ObjC/Assets.xcassets; sourceTree = "<group>"; };
 		AEBC3C321EAE4EBF006A8AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEBC3C341EAE4EBF006A8AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ObjC/Info.plist; sourceTree = "<group>"; };
-		AEBC3C4E1EAE4F7D006A8AF1 /* MirrorDisplay.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MirrorDisplay.xcodeproj; path = ../MirrorDisplay.xcodeproj; sourceTree = "<group>"; };
-		DDC1A9A01F4C3A6500E86B9E /* MirrorCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MirrorCoreSDK.framework; path = ../Core/MirrorCoreSDK.framework; sourceTree = "<group>"; };
+		C9BFE1884E4DE7B667568E20 /* Pods-DisplayExamples-ObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisplayExamples-ObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DisplayExamples-ObjC/Pods-DisplayExamples-ObjC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEBC3C5C1EAE4FD0006A8AF1 /* MirrorDisplay.framework in Frameworks */,
-				DDDEE3911F9749A500B1A1D8 /* MirrorCoreSDK.framework in Frameworks */,
+				AC110A5720FE23CA00725139 /* MirrorDisplay.framework in Frameworks */,
+				8AD3828BFB967CB323D70CAE /* libPods-DisplayExamples-ObjC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +72,9 @@
 				AEBC3C311EAE4EBF006A8AF1 /* LaunchScreen.storyboard */,
 				AEBC3C341EAE4EBF006A8AF1 /* Info.plist */,
 				AEBC3C231EAE4EBF006A8AF1 /* Supporting Files */,
-				AEBC3C4D1EAE4F70006A8AF1 /* Dependencies */,
 				AEBC3C211EAE4EBF006A8AF1 /* Products */,
 				DDC1A99F1F4C3A6400E86B9E /* Frameworks */,
+				CA3A5BE86FC47B454D5EC634 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,28 +95,20 @@
 			path = ObjC;
 			sourceTree = "<group>";
 		};
-		AEBC3C4D1EAE4F70006A8AF1 /* Dependencies */ = {
+		CA3A5BE86FC47B454D5EC634 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AEBC3C4E1EAE4F7D006A8AF1 /* MirrorDisplay.xcodeproj */,
-				AEB930C81EE5FFE300252E30 /* MirrorContextSDK.framework */,
+				2F55E2DED1C621F61AFAFD37 /* Pods-DisplayExamples-ObjC.debug.xcconfig */,
+				C9BFE1884E4DE7B667568E20 /* Pods-DisplayExamples-ObjC.release.xcconfig */,
 			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		AEBC3C4F1EAE4F7D006A8AF1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AEBC3C541EAE4F7D006A8AF1 /* MirrorDisplay.framework */,
-				AEBC3C561EAE4F7D006A8AF1 /* MirrorDisplayTests.xctest */,
-			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		DDC1A99F1F4C3A6400E86B9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DDC1A9A01F4C3A6500E86B9E /* MirrorCoreSDK.framework */,
+				AC110A5620FE23CA00725139 /* MirrorDisplay.framework */,
+				5B94EEC77F61C5E9A29000F2 /* libPods-DisplayExamples-ObjC.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,15 +120,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEBC3C371EAE4EBF006A8AF1 /* Build configuration list for PBXNativeTarget "DisplayExamples-ObjC" */;
 			buildPhases = (
+				45AC4971D877CB9CC92C09CA /* [CP] Check Pods Manifest.lock */,
 				AEBC3C1C1EAE4EBF006A8AF1 /* Sources */,
 				AEBC3C1D1EAE4EBF006A8AF1 /* Frameworks */,
 				AEBC3C1E1EAE4EBF006A8AF1 /* Resources */,
 				AEBC3C5B1EAE4FC7006A8AF1 /* Embed Frameworks */,
+				3497B238FB18DAAE808780B5 /* [CP] Embed Pods Frameworks */,
+				79C050C70086B33AA091157B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AEBC3C5F1EAE4FD0006A8AF1 /* PBXTargetDependency */,
 			);
 			name = "DisplayExamples-ObjC";
 			productName = "DisplayExamples-ObjC";
@@ -202,35 +169,12 @@
 			mainGroup = AEBC3C171EAE4EBF006A8AF1;
 			productRefGroup = AEBC3C211EAE4EBF006A8AF1 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AEBC3C4F1EAE4F7D006A8AF1 /* Products */;
-					ProjectRef = AEBC3C4E1EAE4F7D006A8AF1 /* MirrorDisplay.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				AEBC3C1F1EAE4EBF006A8AF1 /* DisplayExamples-ObjC */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		AEBC3C541EAE4F7D006A8AF1 /* MirrorDisplay.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MirrorDisplay.framework;
-			remoteRef = AEBC3C531EAE4F7D006A8AF1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AEBC3C561EAE4F7D006A8AF1 /* MirrorDisplayTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MirrorDisplayTests.xctest;
-			remoteRef = AEBC3C551EAE4F7D006A8AF1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AEBC3C1E1EAE4EBF006A8AF1 /* Resources */ = {
@@ -245,6 +189,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3497B238FB18DAAE808780B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DisplayExamples-ObjC/Pods-DisplayExamples-ObjC-frameworks.sh",
+				"${PODS_ROOT}/EstimoteBluetoothScanning/EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework",
+				"${PODS_ROOT}/EstimoteProximitySDK/EstimoteProximitySDK/EstimoteProximitySDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EstimoteBluetoothScanning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EstimoteProximitySDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisplayExamples-ObjC/Pods-DisplayExamples-ObjC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45AC4971D877CB9CC92C09CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DisplayExamples-ObjC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79C050C70086B33AA091157B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisplayExamples-ObjC/Pods-DisplayExamples-ObjC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEBC3C1C1EAE4EBF006A8AF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -257,14 +257,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AEBC3C5F1EAE4FD0006A8AF1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MirrorDisplay;
-			targetProxy = AEBC3C5E1EAE4FD0006A8AF1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AEBC3C2C1EAE4EBF006A8AF1 /* Main.storyboard */ = {
@@ -382,11 +374,16 @@
 		};
 		AEBC3C381EAE4EBF006A8AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F55E2DED1C621F61AFAFD37 /* Pods-DisplayExamples-ObjC.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AR5P24RW9V;
-				FRAMEWORK_SEARCH_PATHS = ../Core;
+				FRAMEWORK_SEARCH_PATHS = (
+					../../Core,
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.estimote.DisplayExamples-ObjC";
@@ -396,11 +393,16 @@
 		};
 		AEBC3C391EAE4EBF006A8AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9BFE1884E4DE7B667568E20 /* Pods-DisplayExamples-ObjC.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AR5P24RW9V;
-				FRAMEWORK_SEARCH_PATHS = ../Core;
+				FRAMEWORK_SEARCH_PATHS = (
+					../../Core,
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.estimote.DisplayExamples-ObjC";

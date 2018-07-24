@@ -7,50 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0BE1597A86C8F12E34952B /* Pods_DisplayExamples_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFD3E1B54C368C027125C8A /* Pods_DisplayExamples_Swift.framework */; };
+		AC14F1632105EA7C00B9E1A0 /* MirrorDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC14F1622105EA7C00B9E1A0 /* MirrorDisplay.framework */; };
+		AC14F1642105EA7C00B9E1A0 /* MirrorDisplay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC14F1622105EA7C00B9E1A0 /* MirrorDisplay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEBC3BCB1EAE4AAF006A8AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC3BCA1EAE4AAF006A8AF1 /* AppDelegate.swift */; };
 		AEBC3BCD1EAE4AAF006A8AF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC3BCC1EAE4AAF006A8AF1 /* ViewController.swift */; };
 		AEBC3BD01EAE4AAF006A8AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBC3BCE1EAE4AAF006A8AF1 /* Main.storyboard */; };
 		AEBC3BD21EAE4AAF006A8AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEBC3BD11EAE4AAF006A8AF1 /* Assets.xcassets */; };
 		AEBC3BD51EAE4AAF006A8AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBC3BD31EAE4AAF006A8AF1 /* LaunchScreen.storyboard */; };
-		AEBC3C431EAE4F57006A8AF1 /* MirrorDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBC3C401EAE4F4F006A8AF1 /* MirrorDisplay.framework */; };
-		AEBC3C441EAE4F57006A8AF1 /* MirrorDisplay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEBC3C401EAE4F4F006A8AF1 /* MirrorDisplay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DDDEE38E1F97499800B1A1D8 /* MirrorCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC1A99C1F4C3A3300E86B9E /* MirrorCoreSDK.framework */; };
-		DDDEE38F1F97499800B1A1D8 /* MirrorCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDC1A99C1F4C3A3300E86B9E /* MirrorCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AEBC3C3F1EAE4F4F006A8AF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AEBC3C3A1EAE4F4F006A8AF1 /* MirrorDisplay.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AEBF66091E9A3C4E00B02FED;
-			remoteInfo = MirrorDisplay;
-		};
-		AEBC3C411EAE4F4F006A8AF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AEBC3C3A1EAE4F4F006A8AF1 /* MirrorDisplay.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AEBC3B6C1EACD457006A8AF1;
-			remoteInfo = MirrorDisplayTests;
-		};
-		AEBC3C451EAE4F57006A8AF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AEBC3C3A1EAE4F4F006A8AF1 /* MirrorDisplay.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = AEBF66081E9A3C4E00B02FED;
-			remoteInfo = MirrorDisplay;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		AEBC3C091EAE4C9D006A8AF1 /* Embed Frameworks */ = {
+		AC14F15F2105E7A400B9E1A0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AEBC3C441EAE4F57006A8AF1 /* MirrorDisplay.framework in Embed Frameworks */,
-				DDDEE38F1F97499800B1A1D8 /* MirrorCoreSDK.framework in Embed Frameworks */,
+				AC14F1642105EA7C00B9E1A0 /* MirrorDisplay.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AEB930C61EE5FFD800252E30 /* MirrorContextSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MirrorContextSDK.framework; path = ../Core/MirrorContextSDK.framework; sourceTree = "<group>"; };
+		9D54D955780AC7D3A4928029 /* Pods-DisplayExamples-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisplayExamples-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DisplayExamples-Swift/Pods-DisplayExamples-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		AC14F1622105EA7C00B9E1A0 /* MirrorDisplay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MirrorDisplay.framework; sourceTree = "<group>"; };
 		AEBC3BC71EAE4AAF006A8AF1 /* DisplayExamples-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DisplayExamples-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBC3BCA1EAE4AAF006A8AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Swift/AppDelegate.swift; sourceTree = "<group>"; };
 		AEBC3BCC1EAE4AAF006A8AF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Swift/ViewController.swift; sourceTree = "<group>"; };
@@ -66,8 +41,8 @@
 		AEBC3BD11EAE4AAF006A8AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Swift/Assets.xcassets; sourceTree = "<group>"; };
 		AEBC3BD41EAE4AAF006A8AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEBC3BD61EAE4AAF006A8AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Swift/Info.plist; sourceTree = "<group>"; };
-		AEBC3C3A1EAE4F4F006A8AF1 /* MirrorDisplay.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MirrorDisplay.xcodeproj; path = ../MirrorDisplay.xcodeproj; sourceTree = "<group>"; };
-		DDC1A99C1F4C3A3300E86B9E /* MirrorCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MirrorCoreSDK.framework; path = ../Core/MirrorCoreSDK.framework; sourceTree = "<group>"; };
+		BDFD3E1B54C368C027125C8A /* Pods_DisplayExamples_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisplayExamples_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CC3FBA35E4B410CE3F669E /* Pods-DisplayExamples-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisplayExamples-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-DisplayExamples-Swift/Pods-DisplayExamples-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,26 +50,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEBC3C431EAE4F57006A8AF1 /* MirrorDisplay.framework in Frameworks */,
-				DDDEE38E1F97499800B1A1D8 /* MirrorCoreSDK.framework in Frameworks */,
+				AC14F1632105EA7C00B9E1A0 /* MirrorDisplay.framework in Frameworks */,
+				0A0BE1597A86C8F12E34952B /* Pods_DisplayExamples_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43A05B42D163007786BB0331 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D54D955780AC7D3A4928029 /* Pods-DisplayExamples-Swift.debug.xcconfig */,
+				E6CC3FBA35E4B410CE3F669E /* Pods-DisplayExamples-Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AEBC3BBE1EAE4AAF006A8AF1 = {
 			isa = PBXGroup;
 			children = (
+				AC14F1622105EA7C00B9E1A0 /* MirrorDisplay.framework */,
 				AEBC3BCA1EAE4AAF006A8AF1 /* AppDelegate.swift */,
 				AEBC3BCC1EAE4AAF006A8AF1 /* ViewController.swift */,
 				AEBC3BCE1EAE4AAF006A8AF1 /* Main.storyboard */,
 				AEBC3BD11EAE4AAF006A8AF1 /* Assets.xcassets */,
 				AEBC3BD31EAE4AAF006A8AF1 /* LaunchScreen.storyboard */,
 				AEBC3BD61EAE4AAF006A8AF1 /* Info.plist */,
-				AEBC3C0A1EAE4CC1006A8AF1 /* Dependencies */,
 				AEBC3BC81EAE4AAF006A8AF1 /* Products */,
 				DDC1A99B1F4C3A3200E86B9E /* Frameworks */,
+				43A05B42D163007786BB0331 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,28 +91,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AEBC3C0A1EAE4CC1006A8AF1 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				AEBC3C3A1EAE4F4F006A8AF1 /* MirrorDisplay.xcodeproj */,
-				AEB930C61EE5FFD800252E30 /* MirrorContextSDK.framework */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		AEBC3C3B1EAE4F4F006A8AF1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AEBC3C401EAE4F4F006A8AF1 /* MirrorDisplay.framework */,
-				AEBC3C421EAE4F4F006A8AF1 /* MirrorDisplayTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		DDC1A99B1F4C3A3200E86B9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DDC1A99C1F4C3A3300E86B9E /* MirrorCoreSDK.framework */,
+				BDFD3E1B54C368C027125C8A /* Pods_DisplayExamples_Swift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,15 +106,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEBC3BD91EAE4AAF006A8AF1 /* Build configuration list for PBXNativeTarget "DisplayExamples-Swift" */;
 			buildPhases = (
+				40ADFBEE67BF3E15B9E72CA4 /* [CP] Check Pods Manifest.lock */,
 				AEBC3BC31EAE4AAF006A8AF1 /* Sources */,
 				AEBC3BC41EAE4AAF006A8AF1 /* Frameworks */,
 				AEBC3BC51EAE4AAF006A8AF1 /* Resources */,
-				AEBC3C091EAE4C9D006A8AF1 /* Embed Frameworks */,
+				4B78AD1A78E7395F7DCA06DC /* [CP] Embed Pods Frameworks */,
+				60377ED191A0E87183D92A01 /* [CP] Copy Pods Resources */,
+				AC14F15F2105E7A400B9E1A0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AEBC3C461EAE4F57006A8AF1 /* PBXTargetDependency */,
 			);
 			name = "DisplayExamples-Swift";
 			productName = "DisplayExamples-Swift";
@@ -187,35 +156,12 @@
 			mainGroup = AEBC3BBE1EAE4AAF006A8AF1;
 			productRefGroup = AEBC3BC81EAE4AAF006A8AF1 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AEBC3C3B1EAE4F4F006A8AF1 /* Products */;
-					ProjectRef = AEBC3C3A1EAE4F4F006A8AF1 /* MirrorDisplay.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				AEBC3BC61EAE4AAF006A8AF1 /* DisplayExamples-Swift */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		AEBC3C401EAE4F4F006A8AF1 /* MirrorDisplay.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MirrorDisplay.framework;
-			remoteRef = AEBC3C3F1EAE4F4F006A8AF1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AEBC3C421EAE4F4F006A8AF1 /* MirrorDisplayTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MirrorDisplayTests.xctest;
-			remoteRef = AEBC3C411EAE4F4F006A8AF1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AEBC3BC51EAE4AAF006A8AF1 /* Resources */ = {
@@ -230,6 +176,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40ADFBEE67BF3E15B9E72CA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DisplayExamples-Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B78AD1A78E7395F7DCA06DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DisplayExamples-Swift/Pods-DisplayExamples-Swift-frameworks.sh",
+				"${PODS_ROOT}/EstimoteBluetoothScanning/EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework",
+				"${PODS_ROOT}/EstimoteProximitySDK/EstimoteProximitySDK/EstimoteProximitySDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EstimoteBluetoothScanning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EstimoteProximitySDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisplayExamples-Swift/Pods-DisplayExamples-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60377ED191A0E87183D92A01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DisplayExamples-Swift/Pods-DisplayExamples-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEBC3BC31EAE4AAF006A8AF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -241,14 +243,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AEBC3C461EAE4F57006A8AF1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MirrorDisplay;
-			targetProxy = AEBC3C451EAE4F57006A8AF1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AEBC3BCE1EAE4AAF006A8AF1 /* Main.storyboard */ = {
@@ -369,11 +363,15 @@
 		};
 		AEBC3BDA1EAE4AAF006A8AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D54D955780AC7D3A4928029 /* Pods-DisplayExamples-Swift.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AR5P24RW9V;
-				FRAMEWORK_SEARCH_PATHS = ../Core;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					../../Core,
+				);
 				INFOPLIST_FILE = Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.estimote.DisplayExamples-Swift";
@@ -384,11 +382,15 @@
 		};
 		AEBC3BDB1EAE4AAF006A8AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6CC3FBA35E4B410CE3F669E /* Pods-DisplayExamples-Swift.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AR5P24RW9V;
-				FRAMEWORK_SEARCH_PATHS = ../Core;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					../../Core,
+				);
 				INFOPLIST_FILE = Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.estimote.DisplayExamples-Swift";
