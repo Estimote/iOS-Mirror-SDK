@@ -7,21 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AEB930CE1EE626C500252E30 /* MirrorContextSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEB930C21EE5FE6300252E30 /* MirrorContextSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AEBC3B641EAC9F6B006A8AF1 /* Proximity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC3B631EAC9F6B006A8AF1 /* Proximity.swift */; };
+		AC110A2B20F8E44600725139 /* DisplayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC110A2A20F8E44600725139 /* DisplayRequest.swift */; };
 		AEBC3B711EACD457006A8AF1 /* MirrorDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBF66091E9A3C4E00B02FED /* MirrorDisplay.framework */; };
-		AEBC3B771EACD466006A8AF1 /* ProximityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC3B661EACD417006A8AF1 /* ProximityTests.swift */; };
 		AEBC3B801EADE009006A8AF1 /* ViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC3B7F1EADE009006A8AF1 /* ViewHelpers.swift */; };
 		AEBC3C621EAE566C006A8AF1 /* Poster.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC3C611EAE566C006A8AF1 /* Poster.swift */; };
 		AEBC3C811EAEA429006A8AF1 /* ViewHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC3C801EAEA429006A8AF1 /* ViewHelpersTests.swift */; };
 		AEBF660E1E9A3C4E00B02FED /* MirrorDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = AEBF660C1E9A3C4E00B02FED /* MirrorDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEBF66181E9A3FA900B02FED /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF66171E9A3FA900B02FED /* Client.swift */; };
-		AEBF661B1E9A44CD00B02FED /* ConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF661A1E9A44CD00B02FED /* ConnectivityService.swift */; };
+		AEBF66181E9A3FA900B02FED /* MirrorClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBF66171E9A3FA900B02FED /* MirrorClient.swift */; };
 		DD2D4D5A1F2A3627003DAC09 /* MirrorCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2D4D591F2A361C003DAC09 /* MirrorCoreSDK.framework */; };
-		DD94495B1F9751B400DD4BBC /* EstimoteMirrorCore.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DD9449571F9751B400DD4BBC /* EstimoteMirrorCore.podspec */; };
-		DD94495C1F9751B400DD4BBC /* EstimoteMirror.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DD94495A1F9751B400DD4BBC /* EstimoteMirror.podspec */; };
-		DD94495F1F9751E200DD4BBC /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DD94495D1F9751E100DD4BBC /* LICENSE.txt */; };
-		DD9449601F9751E200DD4BBC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD94495E1F9751E200DD4BBC /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,20 +25,6 @@
 			remoteGlobalIDString = AEBF66081E9A3C4E00B02FED;
 			remoteInfo = MirrorDisplay;
 		};
-		AEBC3C151EAE4E84006A8AF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AEBC3C001EAE4AF6006A8AF1 /* Swift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AEBC3BC71EAE4AAF006A8AF1;
-			remoteInfo = "DisplayExamples-Swift";
-		};
-		AEBC3C4B1EAE4F68006A8AF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AEBC3C471EAE4F68006A8AF1 /* ObjC.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AEBC3C201EAE4EBF006A8AF1;
-			remoteInfo = "DisplayExamples-ObjC";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,7 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AEB930CE1EE626C500252E30 /* MirrorContextSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,26 +41,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AEB930C21EE5FE6300252E30 /* MirrorContextSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MirrorContextSDK.framework; path = Core/MirrorContextSDK.framework; sourceTree = "<group>"; };
-		AEBC3B631EAC9F6B006A8AF1 /* Proximity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proximity.swift; sourceTree = "<group>"; };
-		AEBC3B661EACD417006A8AF1 /* ProximityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProximityTests.swift; sourceTree = "<group>"; };
+		AC110A2A20F8E44600725139 /* DisplayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRequest.swift; sourceTree = "<group>"; };
 		AEBC3B6C1EACD457006A8AF1 /* MirrorDisplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MirrorDisplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBC3B701EACD457006A8AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEBC3B7F1EADE009006A8AF1 /* ViewHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHelpers.swift; sourceTree = "<group>"; };
-		AEBC3C001EAE4AF6006A8AF1 /* Swift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swift.xcodeproj; path = Examples/Swift.xcodeproj; sourceTree = "<group>"; };
-		AEBC3C471EAE4F68006A8AF1 /* ObjC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjC.xcodeproj; path = Examples/ObjC.xcodeproj; sourceTree = "<group>"; };
 		AEBC3C611EAE566C006A8AF1 /* Poster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poster.swift; sourceTree = "<group>"; };
 		AEBC3C801EAEA429006A8AF1 /* ViewHelpersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHelpersTests.swift; sourceTree = "<group>"; };
 		AEBF66091E9A3C4E00B02FED /* MirrorDisplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MirrorDisplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBF660C1E9A3C4E00B02FED /* MirrorDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MirrorDisplay.h; sourceTree = "<group>"; };
 		AEBF660D1E9A3C4E00B02FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEBF66171E9A3FA900B02FED /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		AEBF661A1E9A44CD00B02FED /* ConnectivityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityService.swift; sourceTree = "<group>"; };
+		AEBF66171E9A3FA900B02FED /* MirrorClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorClient.swift; sourceTree = "<group>"; };
 		DD2D4D591F2A361C003DAC09 /* MirrorCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MirrorCoreSDK.framework; path = Core/MirrorCoreSDK.framework; sourceTree = "<group>"; };
-		DD9449571F9751B400DD4BBC /* EstimoteMirrorCore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EstimoteMirrorCore.podspec; sourceTree = "<group>"; };
-		DD94495A1F9751B400DD4BBC /* EstimoteMirror.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EstimoteMirror.podspec; sourceTree = "<group>"; };
-		DD94495D1F9751E100DD4BBC /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		DD94495E1F9751E200DD4BBC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,36 +77,10 @@
 		AEBC3B651EACD3D6006A8AF1 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				AEBC3B661EACD417006A8AF1 /* ProximityTests.swift */,
 				AEBC3C801EAEA429006A8AF1 /* ViewHelpersTests.swift */,
 				AEBC3B701EACD457006A8AF1 /* Info.plist */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		AEBC3B811EAE48AE006A8AF1 /* Examples */ = {
-			isa = PBXGroup;
-			children = (
-				AEBC3C001EAE4AF6006A8AF1 /* Swift.xcodeproj */,
-				AEBC3C471EAE4F68006A8AF1 /* ObjC.xcodeproj */,
-			);
-			name = Examples;
-			sourceTree = "<group>";
-		};
-		AEBC3C121EAE4E84006A8AF1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AEBC3C161EAE4E84006A8AF1 /* DisplayExamples-Swift.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AEBC3C481EAE4F68006A8AF1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AEBC3C4C1EAE4F68006A8AF1 /* DisplayExamples-ObjC.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		AEBC3C601EAE561A006A8AF1 /* Views */ = {
@@ -151,15 +94,9 @@
 		AEBF65FF1E9A3C4E00B02FED = {
 			isa = PBXGroup;
 			children = (
-				DD94495D1F9751E100DD4BBC /* LICENSE.txt */,
-				DD94495E1F9751E200DD4BBC /* README.md */,
-				DD94495A1F9751B400DD4BBC /* EstimoteMirror.podspec */,
-				DD9449571F9751B400DD4BBC /* EstimoteMirrorCore.podspec */,
 				AEBF660B1E9A3C4E00B02FED /* Sources */,
 				AEBC3B651EACD3D6006A8AF1 /* Tests */,
 				AEBF660A1E9A3C4E00B02FED /* Products */,
-				AEBF66141E9A3F5400B02FED /* Core */,
-				AEBC3B811EAE48AE006A8AF1 /* Examples */,
 				DD2D4D561F2A361C003DAC09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -176,23 +113,14 @@
 		AEBF660B1E9A3C4E00B02FED /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				AEBF66171E9A3FA900B02FED /* Client.swift */,
-				AEBC3B631EAC9F6B006A8AF1 /* Proximity.swift */,
+				AEBF66171E9A3FA900B02FED /* MirrorClient.swift */,
 				AEBC3B7F1EADE009006A8AF1 /* ViewHelpers.swift */,
+				AC110A2A20F8E44600725139 /* DisplayRequest.swift */,
 				AEBC3C601EAE561A006A8AF1 /* Views */,
-				AEBF661A1E9A44CD00B02FED /* ConnectivityService.swift */,
 				AEBF660D1E9A3C4E00B02FED /* Info.plist */,
 				AEBF660C1E9A3C4E00B02FED /* MirrorDisplay.h */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		AEBF66141E9A3F5400B02FED /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				AEB930C21EE5FE6300252E30 /* MirrorContextSDK.framework */,
-			);
-			name = Core;
 			sourceTree = "<group>";
 		};
 		DD2D4D561F2A361C003DAC09 /* Frameworks */ = {
@@ -286,16 +214,6 @@
 			mainGroup = AEBF65FF1E9A3C4E00B02FED;
 			productRefGroup = AEBF660A1E9A3C4E00B02FED /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AEBC3C481EAE4F68006A8AF1 /* Products */;
-					ProjectRef = AEBC3C471EAE4F68006A8AF1 /* ObjC.xcodeproj */;
-				},
-				{
-					ProductGroup = AEBC3C121EAE4E84006A8AF1 /* Products */;
-					ProjectRef = AEBC3C001EAE4AF6006A8AF1 /* Swift.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				AEBF66081E9A3C4E00B02FED /* MirrorDisplay */,
@@ -303,23 +221,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		AEBC3C161EAE4E84006A8AF1 /* DisplayExamples-Swift.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "DisplayExamples-Swift.app";
-			remoteRef = AEBC3C151EAE4E84006A8AF1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AEBC3C4C1EAE4F68006A8AF1 /* DisplayExamples-ObjC.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "DisplayExamples-ObjC.app";
-			remoteRef = AEBC3C4B1EAE4F68006A8AF1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AEBC3B6A1EACD457006A8AF1 /* Resources */ = {
@@ -333,10 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD94495F1F9751E200DD4BBC /* LICENSE.txt in Resources */,
-				DD94495B1F9751B400DD4BBC /* EstimoteMirrorCore.podspec in Resources */,
-				DD9449601F9751E200DD4BBC /* README.md in Resources */,
-				DD94495C1F9751B400DD4BBC /* EstimoteMirror.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEBC3C811EAEA429006A8AF1 /* ViewHelpersTests.swift in Sources */,
-				AEBC3B771EACD466006A8AF1 /* ProximityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,10 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEBC3C621EAE566C006A8AF1 /* Poster.swift in Sources */,
-				AEBF66181E9A3FA900B02FED /* Client.swift in Sources */,
+				AEBF66181E9A3FA900B02FED /* MirrorClient.swift in Sources */,
+				AC110A2B20F8E44600725139 /* DisplayRequest.swift in Sources */,
 				AEBC3B801EADE009006A8AF1 /* ViewHelpers.swift in Sources */,
-				AEBF661B1E9A44CD00B02FED /* ConnectivityService.swift in Sources */,
-				AEBC3B641EAC9F6B006A8AF1 /* Proximity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,7 +424,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -553,7 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.estimote.MirrorDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

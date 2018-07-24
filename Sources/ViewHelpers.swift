@@ -16,7 +16,6 @@ public class View: NSObject {
             return [String: Any]()
         }
     }
-
 }
 
 

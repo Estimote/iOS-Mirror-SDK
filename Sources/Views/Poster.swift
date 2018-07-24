@@ -107,7 +107,6 @@ public class PosterStyle: NSObject {
             ]
         }
     }
-
 }
 
 @objc
@@ -117,7 +116,7 @@ public class PosterStyleBuilder: NSObject {
     @objc public var textPosition: Position?
     @objc public var fontSize: FontSize?
     @objc public var fontColor: UIColor?
-    @objc public var textAlign: TextAlign = .left
+    @objc public var textAlign: TextAlign = .left	
     @objc public var backgroundColor: UIColor?
     @objc public var backgroundImage: Image?
 
