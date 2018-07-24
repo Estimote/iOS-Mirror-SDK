@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A0BE1597A86C8F12E34952B /* Pods_DisplayExamples_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFD3E1B54C368C027125C8A /* Pods_DisplayExamples_Swift.framework */; };
-		AC14F1632105EA7C00B9E1A0 /* MirrorDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC14F1622105EA7C00B9E1A0 /* MirrorDisplay.framework */; };
-		AC14F1642105EA7C00B9E1A0 /* MirrorDisplay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC14F1622105EA7C00B9E1A0 /* MirrorDisplay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEBC3BCB1EAE4AAF006A8AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC3BCA1EAE4AAF006A8AF1 /* AppDelegate.swift */; };
 		AEBC3BCD1EAE4AAF006A8AF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC3BCC1EAE4AAF006A8AF1 /* ViewController.swift */; };
 		AEBC3BD01EAE4AAF006A8AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEBC3BCE1EAE4AAF006A8AF1 /* Main.storyboard */; };
@@ -24,7 +21,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AC14F1642105EA7C00B9E1A0 /* MirrorDisplay.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,8 +28,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D54D955780AC7D3A4928029 /* Pods-DisplayExamples-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisplayExamples-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DisplayExamples-Swift/Pods-DisplayExamples-Swift.debug.xcconfig"; sourceTree = "<group>"; };
-		AC14F1622105EA7C00B9E1A0 /* MirrorDisplay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MirrorDisplay.framework; sourceTree = "<group>"; };
 		AEBC3BC71EAE4AAF006A8AF1 /* DisplayExamples-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DisplayExamples-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBC3BCA1EAE4AAF006A8AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Swift/AppDelegate.swift; sourceTree = "<group>"; };
 		AEBC3BCC1EAE4AAF006A8AF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Swift/ViewController.swift; sourceTree = "<group>"; };
@@ -41,8 +35,6 @@
 		AEBC3BD11EAE4AAF006A8AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Swift/Assets.xcassets; sourceTree = "<group>"; };
 		AEBC3BD41EAE4AAF006A8AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEBC3BD61EAE4AAF006A8AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Swift/Info.plist; sourceTree = "<group>"; };
-		BDFD3E1B54C368C027125C8A /* Pods_DisplayExamples_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisplayExamples_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6CC3FBA35E4B410CE3F669E /* Pods-DisplayExamples-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisplayExamples-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-DisplayExamples-Swift/Pods-DisplayExamples-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,27 +42,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC14F1632105EA7C00B9E1A0 /* MirrorDisplay.framework in Frameworks */,
-				0A0BE1597A86C8F12E34952B /* Pods_DisplayExamples_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		43A05B42D163007786BB0331 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9D54D955780AC7D3A4928029 /* Pods-DisplayExamples-Swift.debug.xcconfig */,
-				E6CC3FBA35E4B410CE3F669E /* Pods-DisplayExamples-Swift.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		AEBC3BBE1EAE4AAF006A8AF1 = {
 			isa = PBXGroup;
 			children = (
-				AC14F1622105EA7C00B9E1A0 /* MirrorDisplay.framework */,
 				AEBC3BCA1EAE4AAF006A8AF1 /* AppDelegate.swift */,
 				AEBC3BCC1EAE4AAF006A8AF1 /* ViewController.swift */,
 				AEBC3BCE1EAE4AAF006A8AF1 /* Main.storyboard */,
@@ -79,7 +59,6 @@
 				AEBC3BD61EAE4AAF006A8AF1 /* Info.plist */,
 				AEBC3BC81EAE4AAF006A8AF1 /* Products */,
 				DDC1A99B1F4C3A3200E86B9E /* Frameworks */,
-				43A05B42D163007786BB0331 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,7 +73,6 @@
 		DDC1A99B1F4C3A3200E86B9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BDFD3E1B54C368C027125C8A /* Pods_DisplayExamples_Swift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,7 +113,6 @@
 				TargetAttributes = {
 					AEBC3BC61EAE4AAF006A8AF1 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = AR5P24RW9V;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -363,10 +340,9 @@
 		};
 		AEBC3BDA1EAE4AAF006A8AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D54D955780AC7D3A4928029 /* Pods-DisplayExamples-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AR5P24RW9V;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -382,10 +358,9 @@
 		};
 		AEBC3BDB1EAE4AAF006A8AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6CC3FBA35E4B410CE3F669E /* Pods-DisplayExamples-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AR5P24RW9V;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
