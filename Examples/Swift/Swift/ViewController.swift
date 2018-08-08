@@ -39,5 +39,7 @@ class ViewController: UIViewController {
         mirrorZone.onExitAction = { zoneContext in
             print("Exit mirror")
         }
+
+        self.proximityObserver.startObserving([mirrorZone])
     }
 }

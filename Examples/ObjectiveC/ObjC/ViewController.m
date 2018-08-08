@@ -52,6 +52,8 @@
     mirrorZone.onExitAction = ^(id<EPXProximityZoneContext> context) {
         NSLog(@"Exit mirror");
     };
+    
+    [self.proximityObserver startObserving:@[mirrorZone]];
 }
 
 
