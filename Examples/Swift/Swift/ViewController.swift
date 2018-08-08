@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         let sneakersBanner = Poster() { p in
             
             p.header = "Exceptional traction\nfrom your first to final mile"
+            p.body = "Now 20% off!"
             p.image = .preloaded(path: "shoe_big.jpg")
             
             p.style = PosterStyle() { ps in

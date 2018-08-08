@@ -20,6 +20,7 @@
     Poster *sneakersBanner = [[Poster alloc] init:^(PosterBuilder *p) {
         
         p.header = @"Exceptional traction\nfrom your first to final mile";
+        p.body = @"Now 20% off!";
         p.image = [Image preloadedImageWithPath:@"shoe_big.jpg"];
         
         p.style = [[PosterStyle alloc] init:^(PosterStyleBuilder *ps) {
