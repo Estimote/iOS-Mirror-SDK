@@ -18,12 +18,12 @@ struct DisplayRequest {
         self.mirrorIdentifier = mirrorIdentifier
         self.dictionary = [
             "template": "estimote/__built-in_views",
-            "actions": [
+            "actions": [[
                 "showView": [
                     "id": self.id.uuidString,
                     "type": view.typeName,
                     "data": view.dataDict
-                ]
+                ]]
             ]
         ]
         self.completionBlock = completion
