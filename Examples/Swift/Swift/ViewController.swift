@@ -26,18 +26,17 @@ class ViewController: UIViewController {
             }
         }
         
-        let credentials = EPXCloudCredentials(appID: "", appToken: "")
-        self.proximityObserver = EPXProximityObserver(credentials: credentials, errorBlock: { error in
+        let credentials = CloudCredentials(appID: "", appToken: "")
+        self.proximityObserver = ProximityObserver(credentials: credentials, onError: { error in
             print("\(error)")
         })
         
-        let mirrorZone = EPXProximityZone(range: EPXProximityRange.near,
-                                             tag: "mirror")
-        mirrorZone.onEnterAction = { zoneContext in
+        let mirrorZone = ProximityZone(tag: "mirror", range: ProximityRange.near)
+        mirrorZone.onEnter = { zoneContext in
             print("Enter mirror")
             self.mirrorClient.display(sneakersBanner, onMirror: zoneContext.deviceIdentifier)
         }
-        mirrorZone.onExitAction = { zoneContext in
+        mirrorZone.onExit = { zoneContext in
             print("Exit mirror")
         }
 
