@@ -39,22 +39,24 @@
 
     EPXCloudCredentials *credentials = [[EPXCloudCredentials alloc] initWithAppID:@"" appToken:@""];
     
-    self.proximityObserver = [[EPXProximityObserver alloc] initWithCredentials:credentials errorBlock:^(NSError * _Nonnull error) {
+    self.proximityObserver = [[EPXProximityObserver alloc] initWithCredentials:credentials onError:^(NSError * _Nonnull error) {
+       
         NSLog(@"%@", error);
     }];
     
     
-    EPXProximityZone *mirrorZone = [[EPXProximityZone alloc] initWithRange:[EPXProximityRange customRangeWithDesiredMeanTriggerDistance:1.0] tag:@"mirror"];
+    EPXProximityZone *mirrorZone = [[EPXProximityZone alloc]  initWithTag:@"mirror" range:[EPXProximityRange customRangeWithDesiredMeanTriggerDistance:1.0]];
     
-    mirrorZone.onEnterAction = ^(id<EPXProximityZoneContext> context) {
+    mirrorZone.onEnter = ^(EPXProximityZoneContext * _Nonnull zoneContext) {
         NSLog(@"Enter mirror");
-        [self.mirrorClient displayView:sneakersBanner onMirrorWithIdentifier:context.deviceIdentifier];
+        [self.mirrorClient displayView:sneakersBanner onMirrorWithIdentifier:zoneContext.deviceIdentifier];
     };
-    mirrorZone.onExitAction = ^(id<EPXProximityZoneContext> context) {
+    
+    mirrorZone.onExit = ^(EPXProximityZoneContext * _Nonnull zoneContext) {
         NSLog(@"Exit mirror");
     };
-    
-    [self.proximityObserver startObserving:@[mirrorZone]];
+
+    [self.proximityObserver startObservingZones:@[mirrorZone]];
 }
 
 
