@@ -1,105 +1,127 @@
 # Estimote Mirror iOS SDK
 
-**Take control of the big screen from your iOS app with [Estimote Mirror][]**
-
 [Estimote Mirror]: http://blog.estimote.com/post/150398268230/launching-estimote-mirror-the-worlds-first
 
 [![CocoaPod Version](https://cocoapod-badges.herokuapp.com/v/EstimoteMirror/badge.png)](http://cocoapods.org/pods/estimotemirror)
-[![Feature requests](https://img.shields.io/badge/feature%20request-canny.io-blue.svg)](https://estimote.canny.io/mirror-display)
 [![Apache License 2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0))
-[![MirrorCore](https://www.bitrise.io/app/13e64565384ed7f0/status.svg?token=UrwNNk7xp6qd2BDglzidDw)](https://www.bitrise.io/app/13e64565384ed7f0)
-[![Chat on Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/EstimoteMirror/Mirror-SDK-iOS)
 
-**Got a question?** Join us on [Gitter][], or head over to our [community forums][].
+*This SDK allows you to take control of the big screen from your iOS app with [Estimote Mirror][]*.
 
-[Gitter]: https://gitter.im/EstimoteMirror
-[community forums]: https://forums.estimote.com
+**Main features:**
 
-**Table of Contents:**
+* *Building Mirror experience based on mobile SDKs* - you can start prototyping your first Mirror application, using only mobile Display SDK. There is no need to upload any code or resources upfront to the Mirror.
 
-* [Getting started](#getting-started)
-   + [Hello, world!](#hello-world)
-* [Documentation](#documentation)
-* [Installing via CocoaPods](#pod)
-* [Known issues or things worth knowing](#known-issues-or-things-worth-knowing)
-* [Feedback and support](#feedback-and-support)
+* *Pre-defined views* - No need to design your first Mirror app view. iOS Mirror SDK lets you define customized screens based on pre-defined views; All you need to do is to declare basic styling and data.
 
-## Getting started
+* *Feedback from Mirror screen to mobile* - Whenever any display action is triggered, your mobile app gets notified about it. You can handle successful screen change and perform further actions inside your mobile app.
 
-Clone or download this repo, open MirrorDisplay.xcodeproj, and run the bundled Examples.
+Please check the rest of README to get further details.
 
-Want to integrate it with your own app?
+We really appreciate your [feedback about our SDKs](#your-feedback-and-questions), thank you!
 
-1. Copy this repo into a subdirectory of your project, e.g., `MyProject/MirrorSDK`.
+# Table of Contents
 
-2. Open your project, e.g., `MyProject/MyProject.xcodeproj`. Drag the **MirrorDisplay.xcodeproj** and **MirrorCoreSDK.framework** from the `MirrorSDK` folder into the Project Navigator. Verify that the checkbox next to your app's target is selected.
+* [Installation](#installation)
+* [Quick start](#quick-start)
+* [Your feedback and questions](#your-feedback-and-questions)
+* [Changelog](#changelog)
+* [License](#license)
 
-   (You can check out one of the Examples' "Dependencies" group to see what it should look like.)
+# Installation
 
-3. Go to your project's settings, the *General* tab.
-
-4. Add **MirrorDisplay.framework** and **MirrorCoreSDK.framework** into the *Embedded Binaries* section.
-
-   (Again, when in doubt, you can compare your General tab to that from one of the Examples.)
-
-### Hello, world!
-
-```swift
-import MirrorDisplay
-
-class ViewController: UIViewController {
-
-  let mirrorClient = MirrorClient()
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-
-    let hello = Poster() { p in
-      p.header = "Hello, world!"
-      p.body = "The programmable screen is here."
-      p.image = .preloaded(path: "shoe_big.jpg")
-
-      p.style = PosterStyle() { ps in
-        ps.textAlign = .center
-        ps.textPosition = Position(horizontal: .center, vertical: .bottom(offset: 80))
-        ps.imagePosition = Position(horizontal: .center, vertical: .top(offset: 80))
-      }
-    }
-
-    mirrorClient.display(hello, inProximity: .near)
-  }
-}
-```
-
-## Documentation
-
-We have extensive documentation available on [Estimote Developer Portal](http://developer.estimote.com).
-
-The best place to get started is with … [Intro to Estimote Mirror](http://developer.estimote.com/mirror/)!
+## Prerequisities
+* 1 [Estimote Mirror][] w/ **1.0.15+** firmware version.
+* An account in [Estimote Cloud](https://cloud.estimote.com/).
+* An iOS device with Bluetooth Low Energy support. We suggest using iOS 10.0+ (on iPhone 5s or newer).
 
 ## Pod
 
 Install via [CocoaPods](https://cocoapods.org/):
 - `$ pod init` in the project root directory
-- Edit your Podfile to include `pod 'EstimoteMirror', '~> 0.1.6'` under your project target
+- Edit your Podfile to include the following repositories under your project target
+~~~ 
+  pod 'EstimoteMirror'
+  pod 'EstimoteBluetoothScanning'
+  pod 'EstimoteProximitySDK'
+~~~
 - `$ pod install`
 
-If you need Carthage support, let us know by submitting a feature request or just chat with us over Gitter! (see the badges above)
+## Obtain app credentials from Estimote Cloud
 
-## Known issues or things worth knowing
+To obtain Estimote Cloud credentials for your mobile application:
 
-- "MirrorContextSDK" will soon be renamed to "MirrorCore"
-  - MirrorCore is our framework for discovery, authentication, connection, and sending data to Mirrors
-  - MirrorDisplay is a layer on top of that, to provide a convenient way of showing things on Mirror
+1. Log in to your [Estimote Cloud](https://cloud.estimote.com/) account.
+2. Go to *Apps* section and click `Add new app` option.
+3. Select `Your own app` option.
+4. Save your *App Id/App Token* credentials.
 
-- `MirrorClient` currently tries to connect to any and all Mirror devices it finds
-  - If you want to restrict that: for now, a workaround is to tweak the filter in the `startDeviceDiscovery` call, inside the `ConnectivityService`'s `init`
+# Quick start
 
-- Proximity zone thresholds are currently kind of hard-coded in the `Proximity.swift` file
-  - For now, you can simply tweak them in there
-  - To help with this, there's debug messages with observed RSSI logged in the Xcode console
+Here is simple example for showing Poster View on the screen, when user appears in Mirror nearby range.
 
-## Feedback and support
+```Swift
+// Declare mirrorClient and proximityObserver as class properties
+let mirrorClient = MirrorClient(appID: "", appToken: "")
+var proximityObserver: EPXProximityObserver!
 
-We are working hard to deliver better and more powerful Estimote Mirror experiences with every firmware and SDK release. </br>Feel free to share any feedback or ask questions about this project by sending email to contact@estimote.com
+// Inside you class implementation
+// Prepare your customized Poster View
+let sneakersBanner = Poster() { p in
+            
+    p.header = "Exceptional traction\nfrom your first to final mile"
+    p.body = "Now 20% off!"
+    p.image = .preloaded(path: "shoe_big.jpg")
+    
+    p.style = PosterStyle() { ps in
+        
+        ps.imagePosition = Position(horizontal: .center, vertical: .top(offset: 80))
+        ps.textPosition = Position(horizontal: .center, vertical: .bottom(offset: 80))
+        ps.textAlign = .center
+        ps.headerFontSize = .percent(130)
+    }
+}
+        
+// Initialize your Estimote Cloud credentials
+let credentials = CloudCredentials(appID: "", appToken: "")
+
+// Build ProximityObserver with Cloud credentials
+self.proximityObserver = ProximityObserver(credentials: credentials, onError: { error in
+    
+    print("\(error)")
+})
+
+// Define near proximity zone
+let mirrorZone = ProximityZone(tag: "mirror", range: ProximityRange.near)
+mirrorZone.onEnter = { zoneContext in
+   
+    print("Enter mirror")
+    self.mirrorClient.display(sneakersBanner, onMirror: zoneContext.deviceIdentifier)
+}
+mirrorZone.onExit = { zoneContext in
+    
+    print("Exit mirror")
+}
+
+// Start proximity observation
+self.proximityObserver.startObserving([mirrorZone])
+```
+
+Zone monitoring is based on Estimote Proximity SDK - the most reliable signal-processing technology.
+
+To get more details, you can check out README for [iOS-Proximity-SDK](https://github.com/Estimote/iOS-Proximity-SDK).
+
+# Your feedback and questions
+
+At Estimote we believe in open feedback! Here are some common ways to share your thoughts with us:
+
+* Posting issue/question/enhancement on [our issues page](../../../issues).
+* Asking our community managers on our [Estimote SDK for Android forum](https://forums.estimote.com).
+
+# Changelog
+
+To see what has changed in recent versions of our SDK, please visit [our releases page](../../../releases).
+
+# License
+
+[Apache 2.0](../license.txt)
 
