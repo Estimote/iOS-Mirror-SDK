@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EstimoteMirror'
-  s.version          = '0.2-beta2'
+  s.version          = '0.2.0'
   s.summary          = 'Take control of the TV screen from your iOS app with Estimote Mirror SDK'
   s.description      = <<-DESC
 The Mirror SDK is an addition to the Estimote Mirror Core SDK that enables easy interaction with built-in and custom templates.

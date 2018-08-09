@@ -1,0 +1,6 @@
+target 'DisplayExamples-ObjC' do
+  use_frameworks!
+  pod 'EstimoteMirror'
+  pod 'EstimoteBluetoothScanning'
+  pod 'EstimoteProximitySDK'
+end
